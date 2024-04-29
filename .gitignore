@@ -1,0 +1,5 @@
+
+terraform/aws/env/us-west/terraform.tfstate.backup
+terraform/aws/env/us-west/terraform.tfstate
+terraform/aws/env/us-west/terraform.tfvars
+terraform/aws/env/us-west/.terraform/providers/registry.terraform.io/hashicorp/aws/5.47.0/darwin_amd64/terraform-provider-aws_v5.47.0_x5
