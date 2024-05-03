@@ -215,7 +215,17 @@ resource "aws_instance" "server" {
     {
       "${var.retry_join.tag_key}" = "${var.retry_join.tag_value}"
     },
+    {
+      "PromptID"       = "server-${count.index}"
+    }
   )
+
+  metadata_options {
+    http_endpoint               = "enabled"
+    http_tokens                 = "optional"
+    http_put_response_hop_limit = 1
+    instance_metadata_tags      = "enabled"
+  }
 
   root_block_device {
     volume_type           = "gp2"
@@ -255,7 +265,17 @@ resource "aws_instance" "client" {
     {
       "${var.retry_join.tag_key}" = "${var.retry_join.tag_value}"
     },
+    {
+      "PromptID"       = "client-${count.index}"
+    }
   )
+
+  metadata_options {
+    http_endpoint               = "enabled"
+    http_tokens                 = "optional"
+    http_put_response_hop_limit = 1
+    instance_metadata_tags      = "enabled"
+  }
 
   root_block_device {
     volume_type           = "gp2"
