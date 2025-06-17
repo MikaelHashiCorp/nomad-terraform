@@ -7,3 +7,6 @@ terraform/aws/env/us-west/.terraform.lock.hcl
 /terraform/aws/env/us-west/.terraform
 /terraform/aws/env/us-west/logs/
 terraform/aws/env/us-west/.terraform.tfstate.lock.info
+terraform/aws/env/us-east-1/.terraform.lock.hcl
+/terraform/aws/env/us-east-1/.terraform
+*.tfvars

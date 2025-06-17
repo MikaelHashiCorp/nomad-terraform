@@ -13,7 +13,7 @@
       "owners": ["099720109477"],
       "most_recent": true
     },
-    "instance_type": "t2.medium",
+    "instance_type": "t3a.xlarge",
     "ssh_username": "ubuntu",
     "ami_name": "hashistack {{timestamp}}"
   }],

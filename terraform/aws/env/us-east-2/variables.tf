@@ -11,7 +11,7 @@ variable "whitelist_ip" {
 
 variable "region" {
   description = "The AWS region to deploy to."
-  default     = "us-east-1"
+  default     = "us-east-2"
 }
 
 variable "ami" {
@@ -19,12 +19,12 @@ variable "ami" {
 
 variable "server_instance_type" {
   description = "The AWS instance type to use for servers."
-  default     = "t2.medium"
+  default     = "t2a.medium"
 }
 
 variable "client_instance_type" {
   description = "The AWS instance type to use for clients."
-  default     = "t2.medium"
+  default     = "t2a.medium"
 }
 
 variable "root_block_device_size" {

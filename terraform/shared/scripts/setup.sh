@@ -14,10 +14,10 @@ CONFIGDIR=/ops/shared/config
 sudo apt-get install -yq  apt-utils
 
 # Install HashiCorp products
-CONSULVERSION=1.18.1
-VAULTVERSION=1.15.7
-NOMADVERSION=1.7.6
-CONSULTEMPLATEVERSION=0.35.0
+CONSULVERSION=1.7.8
+CONSULTEMPLATEVERSION=0.25.2
+NOMADVERSION=1.10.2
+VAULTVERSION=1.19.5
 
 sudo apt-get update && sudo apt-get install gpg
 wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
